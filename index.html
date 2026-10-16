@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mayyari — Front-End Developer building modern, responsive websites and digital experiences.">
+  <meta name="theme-color" content="#0a0b12">
+  <title>Mayyari — Front-End Developer</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <nav class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand brand-mark" href="#home" aria-label="Mayyari home"><span class="brand-bracket">&lt;</span>mayyari<span class="brand-bracket">/&gt;</span></a>
+      <div class="d-flex align-items-center gap-2 order-lg-3">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
+          <i class="bi bi-sun-fill"></i>
+        </button>
+        <a class="btn btn-sm btn-primary-gradient nav-cta d-none d-sm-inline-flex" href="#contact">Let's talk <i class="bi bi-arrow-up-right ms-1"></i></a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse order-lg-2" id="mainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero-section section-pad">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7">
+            <div class="eyebrow reveal"><span class="status-dot"></span> Available for freelance projects</div>
+            <p class="hero-kicker reveal reveal-delay-1">Hello, I'm</p>
+            <h1 class="hero-title reveal reveal-delay-1">Rashid Hussain<br><span class="gradient-text">Mayyari.</span></h1>
+            <div class="role-line reveal reveal-delay-2"><span class="role-prefix">I build</span> <span id="typedRole">digital experiences</span><span class="typing-caret">|</span></div>
+            <p class="hero-copy reveal reveal-delay-2">A front-end developer turning ideas into fast, accessible, and beautifully crafted websites. I care about the details that make digital experiences feel effortless.</p>
+            <div class="hero-actions reveal reveal-delay-3">
+              <a class="btn btn-primary-gradient btn-lg" href="#work">Explore my work <i class="bi bi-arrow-down-right ms-2"></i></a>
+              <a class="btn btn-outline-soft btn-lg" href="#contact"><i class="bi bi-chat-dots me-2"></i> Get in touch</a>
+            </div>
+            <div class="hero-socials reveal reveal-delay-3">
+              <span>Find me on</span>
+              <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-visual reveal reveal-delay-2">
+              <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+              <div class="profile-card">
+                <div class="profile-card-top"><span class="window-dot red"></span><span class="window-dot yellow"></span><span class="window-dot green"></span><span class="ms-auto code-label">mayyari.dev</span></div>
+                <div class="code-art">
+                  <div class="code-line"><span class="code-muted">01</span> <span class="code-purple">const</span> <span class="code-blue">developer</span> = {</div>
+                  <div class="code-line indent"><span class="code-pink">name</span>: <span class="code-green">'Mayyari'</span>,</div>
+                  <div class="code-line indent"><span class="code-pink">focus</span>: <span class="code-green">'Front-end'</span>,</div>
+                  <div class="code-line indent"><span class="code-pink">creative</span>: <span class="code-orange">true</span>,</div>
+                  <div class="code-line indent"><span class="code-pink">coffee</span>: <span class="code-orange">Infinity</span></div>
+                  <div class="code-line">};</div>
+                  <div class="code-line code-spacer"></div>
+                  <div class="code-line"><span class="code-purple">function</span> <span class="code-blue">buildSomethingGreat</span>() {</div>
+                  <div class="code-line indent"><span class="code-muted">// turning ideas into reality</span></div>
+                  <div class="code-line indent"><span class="code-purple">return</span> <span class="code-green">'Let's create!'</span>;</div>
+                  <div class="code-line">}</div>
+                  <div class="code-cursor"></div>
+                </div>
+                <div class="profile-card-footer"><span><i class="bi bi-circle-fill"></i> Currently coding</span><span>HTML · CSS · JS</span></div>
+              </div>
+              <div class="float-chip chip-code"><i class="bi bi-code-slash"></i> Clean code</div>
+              <div class="float-chip chip-design"><i class="bi bi-stars"></i> Pixel perfect</div>
+              <div class="hero-spark spark-one">✳</div><div class="hero-spark spark-two">✦</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bottom reveal reveal-delay-3"><span>Scroll to explore</span><span class="scroll-line"></span><span class="hero-bottom-note">Design-minded. Detail-driven. Always learning.</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="section-pad section-border">
+      <div class="container">
+        <div class="section-heading reveal"><p class="section-label">01 / A little about me</p><h2>Building for the web.<br><span class="muted-heading">Driven by curiosity.</span></h2></div>
+        <div class="row gy-4 align-items-start">
+          <div class="col-lg-7 reveal">
+            <p class="about-lead">I’m a front-end developer who enjoys making the web more useful, more intuitive, and more human.</p>
+            <p class="body-copy">From thoughtful layouts to responsive interfaces, I bring ideas to life with clean code and a user-first mindset. I work with modern front-end tools and keep learning so every project can be a little better than the last.</p>
+            <p class="body-copy">My goal is simple: build websites that look great, work smoothly on every screen, and help people or businesses move forward.</p>
+            <a href="#contact" class="text-link">Have a project in mind? Let's talk <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+          <div class="col-lg-5 reveal reveal-delay-1">
+            <div class="about-stats">
+              <div class="stat-item"><span class="stat-number">01</span><span class="stat-label">Curiosity first<br><small>Always learning</small></span></div>
+              <div class="stat-item"><span class="stat-number">100%</span><span class="stat-label">Responsive mindset<br><small>Every screen matters</small></span></div>
+              <div class="stat-item"><span class="stat-number">∞</span><span class="stat-label">Ideas to explore<br><small>Creativity in progress</small></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-pad section-border">
+      <div class="container">
+        <div class="section-heading reveal"><p class="section-label">02 / My toolkit</p><h2>Tools I use to turn<br><span class="muted-heading">ideas into interfaces.</span></h2></div>
+        <div class="row g-3 skills-grid">
+          <div class="col-6 col-md-4 col-lg-3 reveal"><div class="skill-card"><div class="skill-icon html-icon"><i class="bi bi-filetype-html"></i></div><h3>HTML5</h3><p>Semantic structure</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3 reveal reveal-delay-1"><div class="skill-card"><div class="skill-icon css-icon"><i class="bi bi-filetype-css"></i></div><h3>CSS3</h3><p>Responsive styling</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3 reveal reveal-delay-2"><div class="skill-card"><div class="skill-icon js-icon"><i class="bi bi-filetype-js"></i></div><h3>JavaScript</h3><p>Interactive experiences</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3 reveal reveal-delay-3"><div class="skill-card"><div class="skill-icon bootstrap-icon"><i class="bi bi-bootstrap"></i></div><h3>Bootstrap</h3><p>Rapid responsive UI</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3 reveal"><div class="skill-card"><div class="skill-icon react-icon"><i class="bi bi-braces"></i></div><h3>React</h3><p>Component-based UI</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3 reveal reveal-delay-1"><div class="skill-card"><div class="skill-icon wordpress-icon"><i class="bi bi-wordpress"></i></div><h3>WordPress</h3><p>Flexible websites</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3 reveal reveal-delay-2"><div class="skill-card"><div class="skill-icon shopify-icon"><i class="bi bi-bag-check"></i></div><h3>Shopify</h3><p>E-commerce storefronts</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3 reveal reveal-delay-3"><div class="skill-card"><div class="skill-icon git-icon"><i class="bi bi-git"></i></div><h3>Git & GitHub</h3><p>Version control</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section-pad section-border">
+      <div class="container">
+        <div class="section-heading d-md-flex justify-content-between align-items-end reveal"><div><p class="section-label">03 / Selected work</p><h2>Some things I've<br><span class="muted-heading">been building.</span></h2></div><p class="work-intro">A few concept projects that show my approach to design and development.</p></div>
+        <div class="project-filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All projects</button><button class="filter-btn" data-filter="web">Web design</button><button class="filter-btn" data-filter="business">Business</button>
+        </div>
+        <div class="row g-4 project-grid" id="projectGrid">
+          <div class="col-md-6 project-item reveal" data-category="web">
+            <article class="project-card">
+              <div class="project-preview preview-travel"><div class="preview-nav"><span>WANDER / CO.</span><span>EXPLORE&nbsp;&nbsp; JOURNAL&nbsp;&nbsp; CONTACT</span></div><div class="preview-main"><span class="preview-eyebrow">FIND YOUR NEXT STORY</span><h3>Somewhere<br>extraordinary.</h3><span class="preview-pill">Discover destinations ↗</span></div><div class="preview-sun"></div></div>
+              <div class="project-meta"><div><span class="project-type">WEB DESIGN · 01</span><h3>Travel & Tourism</h3><p>A destination-first travel experience with immersive visuals.</p></div><a href="#contact" class="project-link" aria-label="Discuss travel project"><i class="bi bi-arrow-up-right"></i></a></div>
+            </article>
+          </div>
+          <div class="col-md-6 project-item reveal reveal-delay-1" data-category="business">
+            <article class="project-card">
+              <div class="project-preview preview-agency"><div class="agency-orb"></div><div class="agency-word">NOVA<span>®</span></div><div class="agency-caption">DIGITAL STUDIO / 2026</div><div class="agency-bottom">MAKE IT<br><b>MATTER.</b></div><div class="agency-side">STRATEGY · DESIGN · DEVELOPMENT</div></div>
+              <div class="project-meta"><div><span class="project-type">BRANDING · 02</span><h3>Creative Agency</h3><p>A bold agency concept focused on clarity and conversion.</p></div><a href="#contact" class="project-link" aria-label="Discuss agency project"><i class="bi bi-arrow-up-right"></i></a></div>
+            </article>
+          </div>
+          <div class="col-md-6 project-item reveal" data-category="business">
+            <article class="project-card">
+              <div class="project-preview preview-cafe"><div class="cafe-top">K2 <span>ESPRESSO</span></div><div class="cafe-content"><span>BREWED WITH ALTITUDE</span><h3>Find your<br>high point.</h3><div class="cafe-button">VIEW THE MENU</div></div><div class="cafe-cup"><i class="bi bi-cup-hot-fill"></i></div></div>
+              <div class="project-meta"><div><span class="project-type">HOSPITALITY · 03</span><h3>Café & Restaurant</h3><p>A warm, premium café landing page with a clear menu path.</p></div><a href="#contact" class="project-link" aria-label="Discuss cafe project"><i class="bi bi-arrow-up-right"></i></a></div>
+            </article>
+          </div>
+          <div class="col-md-6 project-item reveal reveal-delay-1" data-category="web">
+            <article class="project-card">
+              <div class="project-preview preview-dashboard"><div class="dash-sidebar"><span class="dash-logo">◈</span><i class="bi bi-grid"></i><i class="bi bi-bar-chart"></i><i class="bi bi-folder"></i><i class="bi bi-gear"></i></div><div class="dash-body"><div class="dash-title">Your workspace <span>•••</span></div><div class="dash-sub">Here's your activity overview.</div><div class="dash-stats"><div><small>Projects</small><b>24</b></div><div><small>Tasks done</small><b>86%</b></div></div><div class="dash-chart"><span style="height:35%"></span><span style="height:56%"></span><span style="height:44%"></span><span style="height:72%"></span><span style="height:61%"></span><span style="height:88%"></span><span style="height:68%"></span><span style="height:96%"></span></div></div></div>
+              <div class="project-meta"><div><span class="project-type">UI CONCEPT · 04</span><h3>Analytics Dashboard</h3><p>A tidy dashboard concept built around useful data at a glance.</p></div><a href="#contact" class="project-link" aria-label="Discuss dashboard project"><i class="bi bi-arrow-up-right"></i></a></div>
+            </article>
+          </div>
+        </div>
+        <p class="project-note"><i class="bi bi-info-circle me-2"></i>These are portfolio concept previews. Replace them with links to your live projects when ready.</p>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container"><div class="cta-inner reveal"><div><p class="section-label">HAVE AN IDEA?</p><h2>Let's make something<br><span class="gradient-text">worth clicking.</span></h2></div><a href="#contact" class="btn btn-primary-gradient btn-lg">Start a project <i class="bi bi-arrow-up-right ms-2"></i></a><div class="cta-decoration" aria-hidden="true">✳</div></div></div>
+    </section>
+
+    <section id="contact" class="section-pad section-border">
+      <div class="container">
+        <div class="section-heading reveal"><p class="section-label">04 / Get in touch</p><h2>Have a project?<br><span class="muted-heading">Let's talk about it.</span></h2></div>
+        <div class="row gy-5">
+          <div class="col-lg-5 reveal">
+            <p class="body-copy contact-copy">Whether you need a new website, a redesign, or just want to say hello, my inbox is open.</p>
+            <a class="contact-method" href="mailto:rh1704173@gmail.com"><span class="contact-icon"><i class="bi bi-envelope"></i></span><span><small>Email me at</small><b>rh1704173@gmail.com</b></span><i class="bi bi-arrow-up-right ms-auto"></i></a>
+            <a class="contact-method" href="https://wa.me/923490481896" target="_blank" rel="noreferrer"><span class="contact-icon"><i class="bi bi-whatsapp"></i></span><span><small>Message me on</small><b>WhatsApp</b></span><i class="bi bi-arrow-up-right ms-auto"></i></a>
+            <div class="contact-location"><i class="bi bi-geo-alt"></i> Skardu, Pakistan <span class="location-dot"></span> Working worldwide</div>
+          </div>
+          <div class="col-lg-7 reveal reveal-delay-1">
+            <form class="contact-form" id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6"><label for="contactName" class="form-label">Your name</label><input id="contactName" name="name" class="form-control" placeholder="John Doe" required minlength="2"></div>
+                <div class="col-md-6"><label for="contactEmail" class="form-label">Email address</label><input id="contactEmail" name="email" type="email" class="form-control" placeholder="john@example.com" required></div>
+                <div class="col-12"><label for="contactSubject" class="form-label">What do you need?</label><select id="contactSubject" name="subject" class="form-select" required><option value="" selected disabled>Choose a service</option><option>Website design & development</option><option>Portfolio website</option><option>WordPress / Shopify</option><option>Website redesign</option><option>Something else</option></select></div>
+                <div class="col-12"><label for="contactMessage" class="form-label">Tell me about your project</label><textarea id="contactMessage" name="message" rows="4" class="form-control" placeholder="A little about your idea, goals, and timeline..." required minlength="10"></textarea></div>
+                <div class="col-12 d-flex flex-wrap align-items-center gap-3"><button class="btn btn-primary-gradient btn-lg" type="submit">Send message <i class="bi bi-send ms-2"></i></button><span class="form-hint">Opens your email app to send the message.</span></div>
+                <div class="col-12"><div id="formFeedback" class="form-feedback" role="status" aria-live="polite"></div></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><div class="footer-top"><a class="navbar-brand brand-mark" href="#home"><span class="brand-bracket">&lt;</span>mayyari<span class="brand-bracket">/&gt;</span></a><p>Thoughtful code. Meaningful experiences.</p><a href="#home" class="back-top">Back to top <i class="bi bi-arrow-up"></i></a></div><div class="footer-bottom"><span>© <span id="currentYear"></span> Mayyari. Crafted with care.</span><span>Designed & built by Mayyari <span class="footer-heart">♥</span></span></div></div>
+  </footer>
+
+  <a class="whatsapp-fab" href="https://wa.me/923490481896?text=Hello%20Mayyari%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" aria-label="Chat with Mayyari on WhatsApp">
+    <i class="bi bi-whatsapp" aria-hidden="true"></i><span>Chat on WhatsApp</span>
+  </a>
+
+  <button class="back-to-top-fab" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
